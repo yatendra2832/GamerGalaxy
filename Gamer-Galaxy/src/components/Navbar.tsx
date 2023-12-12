@@ -4,7 +4,7 @@ import logo2 from "../assets/logo2.webp";
 const Navbar = () => {
   return (
     <HStack>
-      <Image src={logo} boxSize={"60px"} />
+      <Image src={logo} boxSize={"50px"} boxShadow="xl" rounded="md" m="2" />
       <Text>Gamer Galaxy</Text>
     </HStack>
   );
