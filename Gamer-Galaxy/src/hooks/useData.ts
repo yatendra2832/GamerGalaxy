@@ -17,6 +17,7 @@ const useData = <T>(
 
   useEffect(
     () => {
+      document.title = "Gamer Galaxy";
       const controller = new AbortController();
 
       setLoading(true);
