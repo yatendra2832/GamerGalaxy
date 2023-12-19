@@ -10,7 +10,7 @@ import { Platform } from "./hooks/usePlatforms";
 import SortSelector from "./components/SortSelector";
 import GameHeading from "./components/GameHeading";
 import Footer from "./components/Footer";
-
+import { Analytics } from "@vercel/analytics/react";
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
@@ -71,6 +71,7 @@ function App() {
       <GridItem area="footer">
         <Footer />
       </GridItem>
+      <Analytics />
     </Grid>
   );
 }
